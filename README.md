@@ -10,6 +10,13 @@ Install with the [skills](https://skills.sh) CLI:
 npx skills@latest add josecabralf/skills
 ```
 
+Or install every skill for Claude Code, GitHub Copilot, OpenCode and ThinkRail at once. Skills are copied to `~/.agents/skills` and symlinked into each tool's skills folder:
+
+```bash
+npx github:josecabralf/skills            # or: node bin/install.mjs
+npx github:josecabralf/skills uninstall
+```
+
 Or clone the repo and symlink every skill into `~/.claude/skills/` for Claude Code. Symlinks keep the installed skills in sync with the working copy:
 
 ```bash
@@ -71,6 +78,7 @@ cp -r skills/diagnosing-bugs ~/.claude/skills/
 
 ### Testing
 
+- **[jev](./skills/jev/SKILL.md)** — Hand bulk yes/no and labelling calls (which files, which log lines, which label) to Jev on OpenRouter, so the agent reads only what survives. Reads the key from `OPENROUTER_API_KEY` or `~/.config/openrouter/api_key`.
 - **[write-unit-tests](./skills/write-unit-tests/SKILL.md)** — Author unit tests through a prohibitions-and-procedure flow: worth-existing → right-instrument → behaviour-name → assertion-first → minimum-arrangement → red-then-green.
 - **[assess-unit-tests](./skills/assess-unit-tests/SKILL.md)** — Audit existing unit tests and emit one verdict per test (keep / refactor / delete / wrong-layer) with the named smell.
 
@@ -93,6 +101,7 @@ This repo is a curated collection. Some skills are original; most come from [mat
 
 - [assess-unit-tests](./skills/assess-unit-tests/SKILL.md)
 - [document](./skills/document/SKILL.md)
+- [jev](./skills/jev/SKILL.md) (modelled on [quicksilver](https://github.com/UditAkhourii/quicksilver))
 - [write-agents-md](./skills/write-agents-md/SKILL.md)
 - [write-for-human](./skills/write-for-human/SKILL.md)
 - [write-unit-tests](./skills/write-unit-tests/SKILL.md)

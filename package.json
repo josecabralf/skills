@@ -1,0 +1,9 @@
+{
+  "name": "josecabralf-skills",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "josecabralf-skills": "bin/install.mjs" },
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "bash test/install.test.sh && node --test test/*.test.mjs" }
+}
