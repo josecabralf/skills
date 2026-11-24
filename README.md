@@ -45,7 +45,7 @@ cp -r skills/diagnosing-bugs ~/.claude/skills/
 
 - [`tdd`](./skills/tdd/SKILL.md) — red-green-refactor, enforced.
 - [`diagnosing-bugs`](./skills/diagnosing-bugs/SKILL.md) — disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
-- [`write-unit-tests`](./skills/write-unit-tests/SKILL.md) / [`assess-unit-tests`](./skills/assess-unit-tests/SKILL.md) — author tests worth keeping, and audit the ones you already have.
+- [`write-unit-tests`](./skills/write-unit-tests/SKILL.md) / [`assess-test`](./skills/assess-test/SKILL.md) — author tests worth keeping, and audit the ones you already have.
 
 ### Designing and modelling code
 
@@ -80,7 +80,7 @@ cp -r skills/diagnosing-bugs ~/.claude/skills/
 
 - **[jev](./skills/jev/SKILL.md)** — Hand bulk yes/no and labelling calls (which files, which log lines, which label) to Jev on OpenRouter, so the agent reads only what survives. Reads the key from `OPENROUTER_API_KEY` or `~/.config/openrouter/api_key`.
 - **[write-unit-tests](./skills/write-unit-tests/SKILL.md)** — Author unit tests through a prohibitions-and-procedure flow: worth-existing → right-instrument → behaviour-name → assertion-first → minimum-arrangement → red-then-green.
-- **[assess-unit-tests](./skills/assess-unit-tests/SKILL.md)** — Audit existing unit tests and emit one verdict per test (keep / refactor / delete / wrong-layer) with the named smell.
+- **[assess-test](./skills/assess-test/SKILL.md)** — Audit existing tests of any type (unit, property-based, integration, e2e, model-based) and emit one verdict per test (keep / refactor / delete / convert → type) with run status and the named smell. Replaces the deprecated `assess-unit-tests`.
 
 ### Productivity
 
@@ -99,7 +99,7 @@ This repo is a curated collection. Some skills are original; most come from [mat
 
 ### Original to this repo
 
-- [assess-unit-tests](./skills/assess-unit-tests/SKILL.md)
+- [assess-test](./skills/assess-test/SKILL.md)
 - [document](./skills/document/SKILL.md)
 - [jev](./skills/jev/SKILL.md) (modelled on [quicksilver](https://github.com/UditAkhourii/quicksilver))
 - [write-agents-md](./skills/write-agents-md/SKILL.md)

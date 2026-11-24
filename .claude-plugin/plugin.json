@@ -1,7 +1,7 @@
 {
   "name": "josecabralf-skills",
   "skills": [
-    "./skills/assess-unit-tests",
+    "./skills/assess-test",
     "./skills/diagnose",
     "./skills/document",
     "./skills/grill-me",

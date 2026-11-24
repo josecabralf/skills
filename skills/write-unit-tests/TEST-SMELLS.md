@@ -1,6 +1,6 @@
 # Test Smells
 
-Symptom → diagnosis → repair. Used by `write-tests` (to prevent) and `assess-tests` (to detect).
+Symptom → diagnosis → repair. Used by `write-tests` (to prevent) and `assess-test` (to detect).
 
 ## Mock-the-mock
 
