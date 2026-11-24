@@ -1,6 +1,6 @@
 ---
 name: assess-unit-tests
-description: Audit existing unit tests and emit one verdict per test (keep / refactor / delete / wrong-layer) with the named smell and a one-line next action. Use when reviewing a PR that touches tests, when tests are described as flaky / brittle / fragile, when asked "is this test worth keeping?", or when a test-suite audit is requested. Filters out tests that should never have existed before naming smells in the survivors. Do not use for authoring new tests, integration tests, e2e tests, property-based tests, or contract tests.
+description: DEPRECATED, use assess-test instead. Audit existing unit tests and emit one verdict per test (keep / refactor / delete / wrong-layer) with the named smell and a one-line next action. Use when reviewing a PR that touches tests, when tests are described as flaky / brittle / fragile, when asked "is this test worth keeping?", or when a test-suite audit is requested. Filters out tests that should never have existed before naming smells in the survivors. Do not use for authoring new tests, integration tests, e2e tests, property-based tests, or contract tests.
 ---
 
 # Assess Unit Tests
